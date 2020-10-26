@@ -1,16 +1,76 @@
 const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require("fs");
+const util = require("util");
+const inquirer = require("inquirer");
 
 generateMarkdown();
-//  Similar to above
+
 
 // array of questions for user
-const questions = [
-
-];
+function promptUser() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "title",
+        message: "What is the title of your project?"
+      },
+      {
+        type: "input",
+        name: "description",
+        message: "Please enter a project description:"
+      },
+      {
+        type: "input",
+        name: "Table of Contents",
+        message: "List the main focal points. Ex: Installation, Usage, Contributing, License "
+      },
+      {
+        type: "input",
+        name: "Installation",
+        message: "What are the steps required to install your project?"
+      },
+      {
+        type: "input",
+        name: "Usage",
+        message: "Provide instructions and examples for use. Include screenshots as needed: "
+      },
+      {
+        type: "input",
+        name: "License",
+        message: "What license did you use?"
+      },
+      {
+          type: "input",
+          name: "Contributing",
+          message: "Who are the contributors of this project?"
+      },
+      {
+          type: "input",
+          name: "Tests",
+          message: "Please enter any test instructions here:"
+      },
+      {
+          type: "input",
+          name: "Questions",
+          message: "Please enter any questions or proposals for future work:"
+      },
+      {
+          type: "input",
+          name: "gitHub",
+          message: "Please enter your GitHub username:",
+      },
+      {
+          type: "input",
+          name: "email",
+          message: "Please enter your email address: ",
+      },
+        
+    ]);
+  }
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+const writeFileAsync = util.promisify(fs.writeFile);
+
 
 // function to initialize program
 function init() {
@@ -20,49 +80,13 @@ function init() {
 // function call to initialize program
 init();
 
-// This will be edited to accommodate for a readme
-const inquirer = require("inquirer");
-const fs = require("fs");
-const util = require("util");
 
-const writeFileAsync = util.promisify(fs.writeFile);
 
-function promptUser() {
-  return inquirer.prompt([
-    {
-      type: "input",
-      name: "title",
-      message: "What is the title of your project?"
-    },
-    {
-      type: "input",
-      name: "description",
-      message: "Enter a description"
-    },
-    {
-      type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
-    },
-    {
-      type: "input",
-      name: "food",
-      message: "What is your favorite food?"
-    },
-    {
-      type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
-    },
-    {
-      type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL."
-    }
-  ]);
-}
 
-function generateHTML(answers) {
+
+
+
+function generate(answers) {
   return `
 <!DOCTYPE html>
 <html lang="en">
