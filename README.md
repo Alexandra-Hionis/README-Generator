@@ -1,7 +1,7 @@
 
-<h1 align="center">fsdsd</h1>
+<h1 align="center">README Generator</h1>
 ## Description
- hdf
+ User needs to generate a ReadMe file to save time and facilitate the completion of their project. They are prompted to answer a series of questions which will complete the ReadMe contents. This includes a project title, description, installation, usage, license, contributing, tests, and questions. Also, a table of contents will be made as well. A users GitHub account and email will be set up as well.
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -11,20 +11,20 @@
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-dgdfsg
+node.js and Inquirer package must be installed. Also utilizes util and fs.
 ## Usage
-dsfgdfs
+A simple application where all the user needs to do is answer the prompts in their terminal/console. They quickly type out their answers and a good quality README.md will be generated. It will cut down on time and enhance the users performance on project specifics.
 ## License
-dsgfdsfg
+ISC
 <br />
-This application is covered by the dsgfdsfg license. 
+This application is covered by the ISC license. 
 ## Contributing
-sdfgg
+Alexandra Hionis
 ## Tests
-dsfgsf
+No tests were used
 ## Questions
-gdf<br />
 <br />
-GitHub: gdf<br /><br />
-Email: dfg<br /><br />
+<br />
+GitHub: Alexandra-Hionis<br /><br />
+Email: Alexandra.hionis@gmail.com<br /><br />
 Copyright 2020 &copy;

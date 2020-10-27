@@ -80,19 +80,8 @@ async function init() {
       console.log(error);
     }
 
-    generateMarkdown(answers);
+    
   }
-  
-
-
-
-
-
-
-// function to write README file
-// const writeToFile = (fileName, data) => {
-//     return writeFileAsync(fileName, data);
-// }
 
 // function call to initialize program
 init();

@@ -1,14 +1,8 @@
 // function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
-
-// `;
-// }
 
 function generateMarkdown(answers) {
   return `
 <h1 align="center">${answers.title}</h1>
-## Description
  ${answers.description}
 ## Table of Contents
 - [Description](#description)
@@ -18,6 +12,7 @@ function generateMarkdown(answers) {
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+## Description
 ## Installation
 ${answers.installation}
 ## Usage
