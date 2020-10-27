@@ -7,9 +7,8 @@
 
 function generateMarkdown(answers) {
   return `
-<h1 align="center">${answers.projectTitle}</h1>
+<h1 align="center">${answers.title}</h1>
 ## Description
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
  ${answers.description}
 ## Table of Contents
 - [Description](#description)
@@ -24,7 +23,7 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 ## License
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+${answers.license}
 <br />
 This application is covered by the ${answers.license} license. 
 ## Contributing

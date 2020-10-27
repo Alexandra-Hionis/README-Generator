@@ -21,32 +21,32 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "Installation",
+        name: "installation",
         message: "What are the steps required to install your project?"
       },
       {
         type: "input",
-        name: "Usage",
+        name: "usage",
         message: "Provide instructions and examples for use. Include screenshots as needed: "
       },
       {
         type: "input",
-        name: "License",
+        name: "license",
         message: "What license did you use?"
       },
       {
           type: "input",
-          name: "Contributing",
+          name: "contributing",
           message: "Who are the contributors of this project?"
       },
       {
           type: "input",
-          name: "Tests",
+          name: "tests",
           message: "Please enter any test instructions here:"
       },
       {
           type: "input",
-          name: "Questions",
+          name: "questions",
           message: "Please enter any questions or proposals for future work:"
       },
       {
