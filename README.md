@@ -1,8 +1,7 @@
-function generateMarkdown(answers) {
-  return `
-<h1 align="center">${answers.title}</h1>
+
+<h1 align="center">fsdsd</h1>
 ## Description
- ${answers.description}
+ hdf
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,20 +11,20 @@ function generateMarkdown(answers) {
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-${answers.installation}
+dgdfsg
 ## Usage
-${answers.usage}
+dsfgdfs
 ## License
-${answers.license}
+dsgfdsfg
 <br />
-This application is covered by the ${answers.license} license. 
+This application is covered by the dsgfdsfg license. 
 ## Contributing
-${answers.contributing}
+sdfgg
 ## Tests
-${answers.tests}
+dsfgsf
 ## Questions
-${answers.questions}<br />
+gdf<br />
 <br />
-Email me with any questions: ${answers.email}<br /><br />
-`;
-}
+GitHub: gdf<br /><br />
+Email: dfg<br /><br />
+Copyright 2020 &copy;

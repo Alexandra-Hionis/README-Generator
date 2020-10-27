@@ -37,4 +37,5 @@ GitHub: ${answers.github}<br /><br />
 Email: ${answers.email}<br /><br />
 Copyright 2020 &copy;`;
 }
+
 module.exports = generateMarkdown;

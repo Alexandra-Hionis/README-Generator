@@ -50,7 +50,7 @@ const questions = [
       },
       {
           type: "input",
-          name: "gitHub",
+          name: "github",
           message: "Please enter your GitHub username:",
       },
       {
@@ -62,32 +62,37 @@ const questions = [
     ];
 
 // function to initialize program
+const promptUser = () => {
+    return inquirer
+        .prompt(questions);
+}
+
 async function init() {
     try {
       const answers = await promptUser();
   
       const generateReadMeContent = generateMarkdown(answers);
   
-      await writeFileAsync('README.md', generateMarkdown);
+      await writeFileAsync('README.md', generateReadMeContent);
   
       console.log("Successfully wrote to README.md");
-    } catch(err) {
-      console.log(err);
+    } catch(error) {
+      console.log(error);
     }
 
     generateMarkdown(answers);
   }
+  
 
 
-  const promptUser = () => {
-    return inquirer
-        .prompt(questions);
-}
+
+
+
 
 // function to write README file
-const writeToFile = (fileName, data) => {
-    return writeFileAsync(fileName, data);
-}
+// const writeToFile = (fileName, data) => {
+//     return writeFileAsync(fileName, data);
+// }
 
 // function call to initialize program
 init();
