@@ -2,13 +2,13 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 generateMarkdown();
 
 
 // array of questions for user
-function promptUser() {
-    return inquirer.prompt([
+const questions = [
       {
         type: "input",
         name: "title",
@@ -60,15 +60,7 @@ function promptUser() {
           message: "Please enter your email address: ",
       },
         
-    ]);
-  }
-
-
-
-// function to write README file
-const writeFileAsync = util.promisify(fs.writeFile);
-
-
+    ];
 
 // function to initialize program
 async function init() {
@@ -86,13 +78,17 @@ async function init() {
     }
   }
 
+  const promptUser = () => {
+    return inquirer
+        .prompt(questions);
+}
+
+// function to write README file
+const writeToFile = (fileName, data) => {
+    return writeFileAsync(fileName, data);
+}
+
 // function call to initialize program
 init();
-
-
-
-
-
-
 
 
