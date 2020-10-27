@@ -14,12 +14,14 @@
 node.js and Inquirer package must be installed. Also utilizes util and fs.
 ## Usage
 A simple application where all the user needs to do is answer the prompts in their terminal/console. They quickly type out their answers and a good quality README.md will be generated. It will cut down on time and enhance the users performance on project specifics.
+![image 1](assets/images/sample-1.png)
+![image 2](assets/images/sample-2.png)
 ## License
 ISC
 ## Contributing
-Alexandra Hionis
+[Alexandra Hionis](https://github.com/Alexandra-Hionis/README-Generator)
 ## Tests
 No tests were used
 ## Questions
-GitHub: [GitHub](https://github.com/Alexandra-Hionis)<br /><br />
-Email: [Alexandra Hionis](mailto:Alexandra.hionis@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)<br /><br />;
+GitHub: (https://github.com/Alexandra-Hionis)<br /><br />
+Email: (mailto:Alexandra.hionis@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)<br /><br />
