@@ -4,7 +4,6 @@ const util = require("util");
 const inquirer = require("inquirer");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-generateMarkdown();
 
 
 // array of questions for user
@@ -64,7 +63,6 @@ const questions = [
 
 // function to initialize program
 async function init() {
-    console.log("hi")
     try {
       const answers = await promptUser();
   
@@ -76,6 +74,8 @@ async function init() {
     } catch(err) {
       console.log(err);
     }
+
+    generateMarkdown(answers);
   }
 
   const promptUser = () => {
