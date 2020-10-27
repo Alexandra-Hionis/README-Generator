@@ -1,5 +1,5 @@
 
-<h1 align="center">README Generator</h1>
+README Generator
 ## Description
  User needs to generate a ReadMe file to save time and facilitate the completion of their project. They are prompted to answer a series of questions which will complete the ReadMe contents. This includes a project title, description, installation, usage, license, contributing, tests, and questions. Also, a table of contents will be made as well. A users GitHub account and email will be set up as well.
 ## Table of Contents
