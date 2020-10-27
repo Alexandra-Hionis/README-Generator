@@ -33,7 +33,8 @@ ${answers.tests}
 ## Questions
 ${answers.questions}<br />
 <br />
-Email me with any questions: ${answers.email}<br /><br />
-`;
+GitHub: ${answers.github}<br /><br />
+Email: ${answers.email}<br /><br />
+Copyright 2020 &copy;`;
 }
 module.exports = generateMarkdown;
