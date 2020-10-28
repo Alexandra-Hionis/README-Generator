@@ -25,4 +25,4 @@ ISC
 No tests were used
 ## Questions
 GitHub: (https://github.com/Alexandra-Hionis)<br /><br />
-Email: [Alexandra Hionis] (mailto:Alexandra.hionis@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)<br /><br />
+Email: Alexandra.hionis@gmail.com<br /><br />
