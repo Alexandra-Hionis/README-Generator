@@ -24,5 +24,5 @@ ISC
 ## Tests
 No tests were used
 ## Questions
-GitHub: (https://github.com/Alexandra-Hionis)<br /><br />
+GitHub: https://github.com/Alexandra-Hionis<br /><br />
 Email: Alexandra.hionis@gmail.com<br /><br />
